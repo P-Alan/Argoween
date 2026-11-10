@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halloween Mystery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <!-- 👉 EDIT HERE: the title of your event -->
+    <h1>O desaparecidamento da ARGO</h1>
+
+    <!-- Question buttons are created by script.js (one per question in QUESTIONS) -->
+    <nav id="question-tabs" class="tabs" aria-label="Choose a question"></nav>
+
+    <!-- The question text is filled in by script.js: edit your questions there -->
+    <p id="question-text" class="mystery" aria-live="polite"></p>
+
+    <form id="mystery-form" autocomplete="off">
+      <label for="answer-input">Resposta do enigma</label>
+      <div class="row">
+        <input id="answer-input" type="text" placeholder="Type it here" required>
+        <button type="submit" class="btn btn-primary">Check answer</button>
+      </div>
+    </form>
+
+    <p id="feedback" role="status"></p>
+
+    <!-- Shown by script.js only when the input is correct -->
+    <section id="answer-box" class="answer hidden" aria-live="polite">
+      <p id="answer-text"></p>
+    </section>
+
+    <div class="actions">
+      <button type="button" id="hint-btn" class="btn btn-ghost">Dica</button>
+
+      <!-- 👉 EDIT HERE: paste your Google Forms link inside href="..."
+           Remove target="_blank" to open the form in the same tab instead. -->
+      <a class="btn btn-secondary" href="https://forms.gle/YOUR-FORM-LINK" target="_blank" rel="noopener noreferrer">Envie suas respostas aqui</a>
+    </div>
+
+    <div id="hint-box" class="hints hidden" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
