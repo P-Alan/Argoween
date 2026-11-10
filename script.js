@@ -74,7 +74,7 @@ const tabs = QUESTIONS.map((_, i) => {
   const tab = document.createElement("button");
   tab.type = "button";
   tab.className = "tab";
-  tab.textContent = `Question ${i + 1}`;
+  tab.textContent = `Questão ${i + 1}`;
   tab.addEventListener("click", () => showQuestion(i));
   tabsNav.appendChild(tab);
   return tab;
